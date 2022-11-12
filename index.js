@@ -8,5 +8,12 @@ app.get("/spotify", (req, res) => {
     return res.json({ message: "Ok report" })
 });
 
+app.get("/calender", (req, res) => {
+
+    console.log("in calender", req.query);
+
+    return res.json({ message: "Ok report" })
+
+});
 console.log(`App listening on port: ${port}`);
 app.listen(port);
